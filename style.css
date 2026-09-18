@@ -619,6 +619,101 @@ section {
     color: var(--color-text);
 }
 
+.learn-examples {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+    position: relative;
+    z-index: 1;
+}
+
+.learn-examples-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.learn-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-secondary);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    margin-bottom: 0.5rem;
+}
+
+.learn-link:last-child {
+    margin-bottom: 0;
+}
+
+.learn-link:hover {
+    border-color: var(--color-primary);
+    background: var(--color-bg-tertiary);
+    color: var(--color-primary-dark);
+}
+
+.learn-link svg {
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.learn-link .link-arrow {
+    margin-left: auto;
+    color: var(--color-text-tertiary);
+    transition: transform var(--transition-fast);
+}
+
+.learn-link:hover .link-arrow {
+    transform: translateX(3px);
+    color: var(--color-primary);
+}
+
+.academy-cta {
+    margin-bottom: var(--spacing-md);
+}
+
+.btn-academy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.75rem;
+    background: var(--gradient-secondary);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 0.75rem;
+}
+
+.btn-academy:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+}
+
+.academy-wip-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    color: var(--color-text-tertiary);
+    line-height: 1.6;
+}
+
 .academy-note {
     padding: var(--spacing-md);
     background: rgba(249, 115, 22, 0.08);
