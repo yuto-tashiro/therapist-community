@@ -18,14 +18,14 @@ Cloudflare Workers Static Assetsで公開: https://community.freelance-therapist
 .
 ├── index.html    # メインHTMLファイル
 ├── style.css     # スタイルシート
-├── script.js     # インタラクティブ機能
 └── README.md     # このファイル
 ```
 
 ## ✨ 機能
 
-- **モダンなデザイン**: ダークモード、グラデーション、グラスモーフィズム
-- **アニメーション**: スクロールアニメーション、ホバーエフェクト、パララックス効果
+- **共通のデザイントーン**: careerと同じ生成りの背景、深緑、控えめな枠線と余白
+- **関連サイトへの導線**: career、学習プラットフォーム、DX・AI活用
+- **アクセシビリティ**: 本文へのスキップリンク、キーボードのフォーカス表示、動きを減らす設定への対応
 - **レスポンシブ**: モバイルからデスクトップまで対応
 - **SEO最適化**: メタタグ、セマンティックHTML
 
@@ -33,12 +33,12 @@ Cloudflare Workers Static Assetsで公開: https://community.freelance-therapist
 
 - HTML5
 - CSS3 (カスタムプロパティ、グリッド、フレックスボックス)
-- Vanilla JavaScript
-- Google Fonts (Noto Sans JP, Outfit)
+- システムフォント（外部フォントへの依存なし）
+- JavaScript不要で全コンテンツとリンクを利用可能
 
 ## 🔗 リンク
 
-- [Discordコミュニティ](https://discord.gg/rTXuBChSAw) - 無料で参加できます
+- [コミュニティ参加申込](https://forms.gle/16bv3AwhHdVpBomw5) - 参加無料・招待制・審査制
 
 ## 📝 ライセンス
 
@@ -55,6 +55,6 @@ npm run deploy:check # 公開前の検証
 npm run deploy       # 指定の本番ドメインへ公開
 ```
 
-`wrangler.jsonc` が公開先の設定です。配信対象は `npm run build` がdistへコピーしたHTML/CSS/JavaScriptの3ファイルだけです。ソース管理ファイルや認証情報は配信しません。参加申込は既存のGoogleフォームへ遷移し、このサイトでは受信・保存しません。
+`wrangler.jsonc` が公開先の設定です。配信対象は `npm run build` がdistへコピーしたHTML/CSSの2ファイルだけです。ソース管理ファイルや認証情報は配信しません。参加申込は既存のGoogleフォームへ遷移し、このサイトでは受信・保存しません。
 
 アカウントはEmbodied Eutopia、Worker名はtherapist-community。カスタムドメイン設定によってCloudflareがDNSと証明書を管理します。workers.devとpreview URLは無効です。GitHubへのpushによる自動公開は未設定で、更新時は上記deployを実行します。

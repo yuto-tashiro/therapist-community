@@ -9,31 +9,31 @@
     <link rel="canonical" href="https://community.freelance-therapist.com/">
     <meta property="og:url" content="https://community.freelance-therapist.com/">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header container">
+        <a class="brand" href="/">フリーランスセラピスト<span>COMMUNITY</span></a>
+        <nav aria-label="関連サイト">
+            <a href="https://career.freelance-therapist.com/">働き方を考える</a>
+            <a href="https://learn.freelance-therapist.com/">学ぶ</a>
+            <a href="#join">参加について</a>
+        </nav>
+    </header>
+    <main id="main">
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-
         <div class="container hero-content">
+            <div class="hero-copy">
             <div class="hero-badge">
-                <span class="badge-dot"></span>
+                <span class="section-label">COMMUNITY</span>
                 <span>フリーランスセラピストのための場所</span>
             </div>
 
-            <h1 class="hero-title">
-                <span class="gradient-text">フリーランスセラピストDAO</span>
-            </h1>
+            <h1 class="hero-title">自分らしく働く。<br>つながりの中で、<br>可能性を広げる。</h1>
+            <p class="hero-name">フリーランスセラピストDAO</p>
+            <p class="hero-lead">日々の気づきを話したり、学びを持ち寄ったり。<br>それぞれの働き方を、ゆるやかに支え合うコミュニティです。</p>
 
             <div class="hero-cta">
                 <a href="https://forms.gle/16bv3AwhHdVpBomw5" class="btn btn-primary" target="_blank"
@@ -46,15 +46,20 @@
                 </a>
                 <span class="cta-note">無料で参加できます(招待制・審査制)</span>
             </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
+            </div>
+            <aside class="hero-aside" aria-label="コミュニティで広がること">
+                <p class="section-label">ひとりの活動に、仲間の視点を。</p>
+                <ol class="community-path">
+                    <li><span>01</span><div><h2>つながる</h2><p>日々のことを、気軽に話せる。</p></div></li>
+                    <li><span>02</span><div><h2>学び合う</h2><p>経験や知識を、持ち寄れる。</p></div></li>
+                    <li><span>03</span><div><h2>広げる</h2><p>相談から、次の可能性が見えてくる。</p></div></li>
+                </ol>
+            </aside>
         </div>
     </section>
 
     <!-- Concept Section -->
-    <section class="concept">
+    <section class="concept" id="concept">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Our Philosophy</span>
@@ -70,8 +75,8 @@
                                 stroke-linecap="round" />
                             <defs>
                                 <linearGradient id="gradient1" x1="4" y1="4" x2="44" y2="44">
-                                    <stop offset="0%" stop-color="#fbbf24" />
-                                    <stop offset="100%" stop-color="#f97316" />
+                                    <stop offset="0%" stop-color="#527c6c" />
+                                    <stop offset="100%" stop-color="#315f50" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -90,8 +95,8 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                             <defs>
                                 <linearGradient id="gradient2" x1="8" y1="8" x2="40" y2="40">
-                                    <stop offset="0%" stop-color="#f97316" />
-                                    <stop offset="100%" stop-color="#ef4444" />
+                                    <stop offset="0%" stop-color="#315f50" />
+                                    <stop offset="100%" stop-color="#527c6c" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -109,8 +114,8 @@
                                 stroke="url(#gradient3)" stroke-width="2" stroke-linejoin="round" />
                             <defs>
                                 <linearGradient id="gradient3" x1="8" y1="8" x2="40" y2="40">
-                                    <stop offset="0%" stop-color="#fde047" />
-                                    <stop offset="100%" stop-color="#fb7185" />
+                                    <stop offset="0%" stop-color="#527c6c" />
+                                    <stop offset="100%" stop-color="#315f50" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -251,16 +256,17 @@
                 </div>
 
                 <div class="academy-visual">
+                    <p class="section-label">学びを、自分の実践へ。</p>
                     <div class="visual-card card-1">
-                        <div class="card-icon">📚</div>
+                        <div class="card-icon" aria-hidden="true">01</div>
                         <div class="card-text">体系的なカリキュラム</div>
                     </div>
                     <div class="visual-card card-2">
-                        <div class="card-icon">💡</div>
+                        <div class="card-icon" aria-hidden="true">02</div>
                         <div class="card-text">実践的なノウハウ</div>
                     </div>
                     <div class="visual-card card-3">
-                        <div class="card-icon">🤝</div>
+                        <div class="card-icon" aria-hidden="true">03</div>
                         <div class="card-text">仲間との学び</div>
                     </div>
                 </div>
@@ -304,7 +310,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" id="join">
         <div class="container">
             <div class="cta-content">
                 <h2 class="cta-title">
@@ -332,15 +338,12 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="cta-box-decoration">
-                        <div class="decoration-circle circle-1"></div>
-                        <div class="decoration-circle circle-2"></div>
-                        <div class="decoration-circle circle-3"></div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -351,13 +354,17 @@
                     <p>健康で幸せに、プロフェッショナルとして</p>
                 </div>
             </div>
+            <nav class="footer-links" aria-label="フリーランスセラピストの関連サイト">
+                <a href="https://career.freelance-therapist.com/">キャリア・働き方</a>
+                <a href="https://learn.freelance-therapist.com/">専門知識を学ぶ</a>
+                <a href="https://dxai.freelance-therapist.com/">DX・AI活用</a>
+            </nav>
             <div class="footer-bottom">
                 <p>&copy; 2024 フリーランスセラピストコミュニティ. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
