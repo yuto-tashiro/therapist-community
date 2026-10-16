@@ -1233,3 +1233,24 @@ section {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Keep long Japanese headings within the available mobile column. */
+.academy-content > * {
+    min-width: 0;
+}
+@media (max-width: 968px) {
+    .academy-content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .academy .section-title {
+        overflow-wrap: anywhere;
+    }
+}
+@media (max-width: 480px) {
+    .hero-content {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
