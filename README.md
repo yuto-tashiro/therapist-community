@@ -10,7 +10,7 @@
 
 ## 🚀 デモ
 
-GitHub Pagesでホスティング: https://yuto-tashiro.github.io/therapist-community/
+Cloudflare Workers Static Assetsで公開: https://community.freelance-therapist.com/
 
 ## 📦 ファイル構成
 
@@ -43,3 +43,18 @@ GitHub Pagesでホスティング: https://yuto-tashiro.github.io/therapist-comm
 ## 📝 ライセンス
 
 © 2024 フリーランスセラピストコミュニティ. All rights reserved.
+
+## Cloudflareへの公開
+
+Node.js 24以降を使用します。
+
+```sh
+npm ci
+npm run dev          # ローカル確認
+npm run deploy:check # 公開前の検証
+npm run deploy       # 指定の本番ドメインへ公開
+```
+
+`wrangler.jsonc` が公開先の設定です。配信対象は `npm run build` がdistへコピーしたHTML/CSS/JavaScriptの3ファイルだけです。ソース管理ファイルや認証情報は配信しません。参加申込は既存のGoogleフォームへ遷移し、このサイトでは受信・保存しません。
+
+アカウントはEmbodied Eutopia、Worker名はtherapist-community。カスタムドメイン設定によってCloudflareがDNSと証明書を管理します。workers.devとpreview URLは無効です。GitHubへのpushによる自動公開は未設定で、更新時は上記deployを実行します。
